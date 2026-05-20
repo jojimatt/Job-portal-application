@@ -3,6 +3,10 @@
 A full-featured job portal REST API built with Spring Boot as part of Madan Reddy's Udemy coursework. The backend handles multi-role authentication, job postings, applications, company management, and user profiles.
 
 ---
+## Acknowledgements
+This project was developed as part of the Master Spring 7, Spring Boot 4, REST, JPA, Security course by Madan Reddy (completed on May 2026)
+The implementation follows the course curriculum.
+Course completion certificate : https://www.udemy.com/certificate/UC-1ad93fe8-82dd-4d2a-ab9d-db9cabc292ce/
 
 ## Table of Contents
 
@@ -226,37 +230,7 @@ All database and JWT values can be overridden via environment variables.
 
 - Java 25+
 - Maven 3.8+
-- MySQL 8+ (or Docker with Docker Compose)
-
-### Steps
-
-1. **Start MySQL** — the project includes Docker Compose support. If Docker is installed:
-   ```bash
-   docker compose up -d
-   ```
-   Or start MySQL manually and create the `jobportal` database.
-
-2. **Set environment variables** (or update `application.properties`):
-   ```bash
-   export JWT_SECRET=your_64_char_minimum_secret_key
-   export DATABASE_PASSWORD=your_db_password
-   ```
-
-3. **Run the application:**
-   ```bash
-   cd jobportal
-   mvn spring-boot:run
-   ```
-
-4. **Access Swagger UI:**
-   ```
-   http://localhost:8080/swagger-ui.html
-   ```
-
-5. **Access Actuator:**
-   ```
-   http://localhost:9090/jobportal/actuator/health
-   ```
+- Docker for running MySQL. Docker starts automatically with services mentioned in Spring
 
 ---
 
@@ -289,4 +263,4 @@ Sampling probability is set to 100% by default. Connect any OTEL-compatible coll
 ## Related
 
 - **Frontend:** `job-portal-ui/` (separate Vite/React app)
-- **Course:** Madan Reddy — Udemy Spring Boot Coursework
+
