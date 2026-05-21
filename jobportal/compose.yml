@@ -8,7 +8,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: jobportal
     volumes:
-      - /Users/eazybytes/Desktop/jobportal-data:/var/lib/mysql
+      - /Users/jojimathew/projects/jobportal-data:/var/lib/mysql #change path here 
   grafana-lgtm:
     image: 'grafana/otel-lgtm:latest'
     ports:
