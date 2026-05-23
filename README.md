@@ -10,6 +10,7 @@ Course completion certificate : https://www.udemy.com/certificate/UC-1ad93fe8-82
 
 ## Table of Contents
 
+- [Steps](#steps)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Features](#features)
@@ -20,6 +21,14 @@ Course completion certificate : https://www.udemy.com/certificate/UC-1ad93fe8-82
 - [Running Locally](#running-locally)
 - [Caching](#caching)
 - [Observability](#observability)
+
+---
+## Steps
+- Change file path in compose.yml for Sql database persistent volume
+- Connect to database and create all tables in jobportal-schema.sql and jobportal-data.sql
+- Open jobporatl ui folder. Run 'npm install' followed by 'npm run dev'. Open the localhost:5173 web to test out the applications
+- Before proceeding. Register three accounts with the same credentials as the demo credentials in the UI.
+- Change the roles id of the three users to the respective roles in Users database to test out all functionalities. By default, all users have JOB_SEEKER role
 
 ---
 
@@ -233,12 +242,7 @@ All database and JWT values can be overridden via environment variables.
 - Docker for running MySQL. Docker starts automatically with services mentioned in Spring
 
 ---
-## Steps
-- Change file path in compose.yml for Sql database persistent volume
-- Connect to database and create all tables in jobportal-schema.sql and jobportal-data.sql
-- Open jobporatl ui folder. Run 'npm install' followed by 'npm run dev'. Open the localhost:5173 web to test out the applications
-- Before proceeding. Register three accounts with the same credentials as the demo credentials in the UI.
-- Change the roles id of the three users to the respective roles in Users database to test out all functionalities. By default, all users have JOB_SEEKER role
+
 
 ## Caching
 
